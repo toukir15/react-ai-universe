@@ -3,8 +3,8 @@ import { SlCalender } from "react-icons/sl";
 import { BsArrowRight } from "react-icons/bs";
 
 const SingleData = (props) => {
-  //   console.log(props.singleData);
-  const { name, image, published_in, features } = props.singleData;
+  // console.log(props);
+  const { id, name, image, published_in, features } = props.singleData;
   return (
     <>
       <div className="card w-96 bg-base-100 shadow-xl my-5">
@@ -30,7 +30,10 @@ const SingleData = (props) => {
                 <p>{published_in}</p>
               </div>
             </div>
-            <div className="bg-purple-200 p-2 rounded-2xl cursor-pointer">
+            <div
+              onClick={() => props.setUniqueId(id)}
+              className="bg-purple-200 p-2 rounded-2xl cursor-pointer"
+            >
               <label htmlFor="my-modal-5">
                 <BsArrowRight className="" />
               </label>
