@@ -8,7 +8,6 @@ const Card = () => {
   const [showAll, setShowAll] = useState(false);
   const [uniqueId, setUniqueId] = useState(null);
   const [singleData, setSingleData] = useState({});
-  console.log(singleData);
 
   const handleShowAll = () => {
     setShowAll(true);
