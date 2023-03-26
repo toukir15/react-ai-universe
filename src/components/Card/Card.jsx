@@ -15,7 +15,7 @@ const Card = () => {
   }, []);
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto my-5">
         {data.map((singleData) => (
           <SingleData singleData={singleData}></SingleData>
         ))}
