@@ -45,7 +45,7 @@ const Card = () => {
           </span>
         </div>
       )}
-      <Modal setSingleData={setSingleData} />
+      <Modal singleData={singleData} />
     </>
   );
 };
