@@ -31,7 +31,9 @@ const SingleData = (props) => {
               </div>
             </div>
             <div className="bg-purple-200 p-2 rounded-2xl cursor-pointer">
-              <BsArrowRight className="" />
+              <label htmlFor="my-modal-5">
+                <BsArrowRight className="" />
+              </label>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
+import Modal from "../Modal/Modal";
 import SingleData from "../SingleData/SingleData";
 
 const Card = () => {
@@ -7,6 +8,7 @@ const Card = () => {
   const [showAll, setShowAll] = useState(false);
 
   const handleShowAll = () => {
+    console.log("clicked");
     setShowAll(true);
   };
   useEffect(() => {
@@ -26,9 +28,14 @@ const Card = () => {
           <SingleData singleData={singleData}></SingleData>
         ))}
       </div>
-      <div onClick={handleShowAll}>
-        <Button>See More</Button>
-      </div>
+      {!showAll && (
+        <div className="text-center">
+          <span className="inline-block" onClick={handleShowAll}>
+            <Button>See More</Button>
+          </span>
+        </div>
+      )}
+      <Modal />
     </>
   );
 };
