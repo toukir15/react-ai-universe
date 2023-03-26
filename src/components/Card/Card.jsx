@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SingleData from "../SingleData/SingleData";
 
 const Card = () => {
   const [data, setData] = useState([]);
@@ -13,9 +14,13 @@ const Card = () => {
     loadData();
   }, []);
   return (
-    <div>
-      <h1>hello card vai</h1>
-    </div>
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto mt-5">
+        {data.map((singleData) => (
+          <SingleData singleData={singleData}></SingleData>
+        ))}
+      </div>
+    </>
   );
 };
 
