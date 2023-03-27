@@ -3,7 +3,6 @@ import { SlCalender } from "react-icons/sl";
 import { BsArrowRight } from "react-icons/bs";
 
 const SingleData = (props) => {
-  // console.log(props);
   const { id, name, image, published_in, features } = props.singleData;
   return (
     <>

@@ -8,6 +8,8 @@ const App = () => {
     <>
       <Header />
       <Button>Sort By Date</Button>
+      <Button>Sort By Date</Button>
+      <Button>Sort By Date</Button>
       <Card />
     </>
   );
